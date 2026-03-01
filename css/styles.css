@@ -1,0 +1,124 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #f5f7fb;
+	color: #222;
+}
+
+header.welcome-banner {
+	background: linear-gradient(135deg, #4a90e2 0%, #357ab7 100%);
+	padding: 20px 10px;
+	text-align: center;
+}
+
+header.welcome-banner img {
+    border: 3px solid rgba(255,255,255,0.6);
+    border-radius: 8px;
+}
+
+nav {
+	background: #e4dede;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.main-content {
+	padding: 18px 20px;
+	flex: 1 0 auto;
+}
+
+/* Center only main-content (keeps header/nav/footer unchanged) */
+.main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main-content h1 {
+	text-align: center;
+	margin-right: 90px;
+}
+.main-content form {
+	width: 100%;
+	max-width: 520px;
+	box-sizing: border-box;
+}
+.main-content .form-control {
+	width: 100%;
+	max-width: 420px;
+}
+
+/* Keep labels on one line in main content, allow wrapping on very small screens */
+.main-content .col-form-label {
+	white-space: nowrap;
+}
+@media (max-width: 420px) {
+	.main-content .col-form-label { white-space: normal; }
+}
+
+.welcome-msg {
+	padding: 18px 20px;
+	flex: 1 0 auto;
+	text-align: center;
+}
+
+/* Shorter inputs for signup form */
+.main-content .form-control {
+    max-width: 420px;
+	border-color: rgb(77, 77, 77);
+}
+
+.col-form-label {
+	margin-left: 3px;
+}
+
+.advertisements img {
+	max-width: 220px;
+	height: auto;
+	display: block;
+	margin: 8px auto;
+	border: 2px solid #e0e0e0;
+	border-radius: 6px;
+	padding: 6px;
+	background: #fff;
+}
+
+
+footer.website-terms a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer.website-terms a:hover {
+	text-decoration: underline;
+	color: #d0e8ff;
+}
+
+footer.website-terms {
+	background: #222;
+	color: #fff;
+	padding: 12px 10px;
+	text-align: center;
+}
+
+/* additional styling for improved professionalism */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+/* ensure headers and leads have good spacing */
+.welcome-msg h1 {
+    margin-bottom: 0.5rem;
+}
+.welcome-msg .lead {
+    margin-top: 0.5rem;
+}
+
